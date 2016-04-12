@@ -1,23 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Todo list</title>
 </head>
+<header class="main-header">
+    <h1 class="logo">The Todolist</h1>
+    <p class="logo-subheader">Make your life great again</p>
+    <nav>
+        <ul class="navigation">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href=""></a></li>
+        </ul>
+    </nav>
+</header>
 <body>
 <main>
-    <h1>Todo list</h1>
-    <form>
-        Todo: <input type="text" id="todoName">
-        <input type="button" value="Submit" onclick="DoSomething()">
-    </form>
+    <header>
+        <h1>The List</h1>
+    </header>
+    <section class="newTodo">
+        <p>Todo: </p><input type="text" id="todoName">
+        <input type="button" value="Submit" onclick="AddTodoItem()">
+    </section>
+    <section class="activeItems">
     <h2>Active items</h2>
-    <ul id="activeItems"></ul>
-    <h2>Done items</h2>
-    <ul id="doneItems"></ul>
+        <ul id="activeItems"></ul>
+    </section>
+    <section class="doneItems">
+        <h2>Done items</h2>
+        <ul id="doneItems"></ul>
+    </section>
 </main>
+<footer>
+    <p>Made by: etc</p>
+</footer>
 <script src="js/main.js"></script>
 </body>
 </html>

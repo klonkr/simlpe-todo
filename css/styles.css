@@ -1,3 +1,33 @@
+.main-header {
+    background: url("../img/todo.jpeg") no-repeat center/cover;
+    height: 30vh;
+}
+
+.logo {
+    margin-top: 0;
+    padding-top: 5em;
+    text-align: center;
+
+}
+
+.logo-subheader {
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    text-align: right;
+}
+
+.nav-item {
+    display: inline-block;
+    text-align: right;
+}
+
+html {
+    font-family: 'Poiret One', cursive;
+}
+/*
 main {
   width: 230px;
   margin: 0 auto;
@@ -28,3 +58,4 @@ ul {
   padding: 0;
   text-align: center;
 }
+*/
